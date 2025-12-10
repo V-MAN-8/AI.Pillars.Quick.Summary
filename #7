@@ -1,0 +1,42 @@
+## Neural Networks and the Human Brain
+
+- **Structure:** A biological neuron has a **cell body** (with the nucleus) and a long **axon** leading to branching terminals.
+- **Communication:** Neurons communicate by **receiving signals** into the axon, **altering** those signals, and then **transmitting** them out through the terminals to other neurons.
+- **Scale:** The human brain is estimated to have about **100 billion neurons**, with each connected to up to 10,000 others.
+
+---
+
+## Machine Learning Perceptron
+
+- **Structure:** A perceptron consists of an **input layer**, one or more **hidden layers**, and an **output layer**.
+- **Processing:** A signal enters the input layer. The **hidden layers** then run algorithms on the signal before passing the result to the output layer.
+- **Nodes and Firing:** The hidden layers contain **nodes** that run algorithms.
+    - A node "fires" (activates) when its calculated value reaches a certain **threshold**.
+    - This decision is often made using a **sigmoid function**, which generates a binary (YES/NO) answer.
+    - If a node fires, the signal cascades to connected nodes, which then also fire if they reach their own thresholds.
+
+## **Neural Network (NN)**
+
+A neural network operates through **pure mathematics**—it **calculates** rather than "thinks"—to produce an output that can be interpreted as an answer or recommendation. The entire decision-making process is based on **Input**, **Weight**, and an **Activation Algorithm**.
+
+## **The Flow of Calculation**
+
+**Consider the scenario:** A neural network must decide, **"Should Marc order a pizza?"** The network, which has already been trained on Marc's past behavior, uses three observed factors:
+**Ordering Ahead:** The network notes Marc **always orders ahead**. It assigns this factor an **initial value** of Based on Marc's past consistency, it assigns a high **weight** of **3**. The resulting output value for this node is $1 \times 3 = 3$.
+**Getting Salad Instead:** The network notes Marc orders a salad about half the time, giving it an initial value of **0.5**. Since Marc is inconsistent about avoiding pizza, the system assigns a low weight of **0.5**. The resulting output value is $0.5 \times 0.5 = 0.25$.
+**Free Coupon:** The network notes Marc **has a coupon** (value **1**) and always uses them. It assigns a very high **weight** of **5**. The resulting output value is $1 \times 5 = 5$.
+
+## **The Final Decision**
+
+The hidden layer then uses an **activation algorithm** to reach the final decision. This algorithm **adds the output values** from all nodes:$$3 + 0.25 + 5 = 8.25$$
+The network must compare this total to a pre-set **threshold** for ordering pizza, which is **6**. Since the total value of **8.25** is **greater than** the threshold, the final node "fires," resulting in the recommendation: **"Order the pizza!"**
+
+---
+
+## The Learning Mechanism
+
+**Corpus and Testing:** Once the network has ingested or learned data, it stores it in its **corpus**. To learn, it constantly tests new data or calculation results against the established patterns in the corpus.
+
+**Adjustment and Modification:** If the new data doesn't match the established patterns, the network **modifies those patterns** for a better fit.
+
+**Rapid Guessing:** Machine learning uses its speed to make many **guesses** very rapidly, setting the first guess as a variable. It then makes small, mathematically chosen **adjustments** to that variable and tests the fit again. It continues this cycle, getting closer and closer to the ideal answer, but never quite reaching 100% perfection.
