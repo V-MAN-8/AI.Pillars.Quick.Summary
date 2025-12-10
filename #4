@@ -1,0 +1,75 @@
+## **NLP sentence segmentation and tokens**
+
+**Natural Language Processing (NLP)** : is the field dedicated to making **computers** understand and work with **human language**. Computers excel at structured data (neatly grouped and labeled), but human language is **unstructured** and messy.
+
+---
+
+## deal with the messiness of human language NLP
+
+1. **Sentence Segmentation:** Computers begin by processing **one sentence at a time**.
+2. **Tokenization:** The sentence is broken down into small chunks of information called **tokens**, which are then individually classified.
+3. **Classification/Structuring:** Once tokens are sorted based on their meaning, the computer can begin to understand the information.
+
+---
+
+## Key Components for Understanding Language
+
+- **Entities:** An **entity** is a **noun** representing a person, place, or thing.
+    - *Example:* In the joke, "**I**," "**elephant**," and "**pajamas**" are entities.
+- **Relationships:**
+    - A **relationship** is a strong connection between **two or more entities**.
+    - Identifying relationships helps AI structure the information.
+    - *Example:* Identifying that the pronoun "**He**" in a second sentence refers back to the entity "**Armen**" in the first sentence.
+- **Concepts:**
+    - A **concept** is something that is **implied** in a sentence but **not actually stated**.
+    - Identifying concepts is trickier as it involves matching ideas rather than specific words.
+    
+    ---
+    
+    ## Emotion Detection and Sentiment Analysis
+    
+    While both **Emotion Detection** and **Sentiment Analysis** deal with feelings rather than facts, they are two distinct approaches that help an AI better understand human language.
+    
+    **Emotion Detection:** aims to identify **distinct human emotion types**. AI is trained to classify the emotion being expressed, such as **anger**, **happiness**, or **fear**, often based on user feedback or comments. Identifying the correct emotional token is crucial, as different emotions can significantly change the meaning of a sentence in contexts like social media posts or customer service chats.
+    
+    **Sentiment Analysis**: **Sentiment Analysis** does **not** identify a specific emotion; rather, it measures the **strength** or **polarity** of the feeling. It functions as a sliding scale with **positive** at one end, **negative** at the other, and **neutral** in the middle. The goal of sentiment analysis is to assess whether the data is broadly **positive, negative, or neutral**.
+    
+    ---
+    
+    ## The Challenge of Classification
+    
+    - **Vagueness and Double Meanings:** Words often have multiple meanings depending on the context. For instance, in the riddle "Why does your nose **run** and your feet **smell**?", the words "run" and "smell" take on different meanings ("runny nose" vs. "run a race"; "unpleasant odor" vs. "smell a flower").
+    - **Context Dependency:** An AI must rely heavily on the **context** of a sentence, not just the individual words (tokens).
+        - *Example:* In "I went to the **docks** to **ship** my box," the word "**docks**" is the contextual clue that suggests the method of shipping is by **boat**.
+        - In contrast, in "I went to the **station** to **ship** my box," the word "**station**" suggests shipping by **rail** (train).
+    
+    ---
+    
+    ## AI's Solution: Frequency and Confidence
+    
+    To overcome these classification challenges, AI systems use **statistical learning** based on vast amounts of data:
+    
+    1. **Frequency Identification:** The AI **ingests thousands of examples** (instances) of language use. It identifies the **frequency** with which certain words (like places or actions) are linked with specific concepts (like travel methods).
+    2. **Gradual Improvement:** By analyzing these patterns (e.g., how often "shipping from a dock" is linked to "boat travel"), the system gradually **improves its classification** accuracy and makes fewer mistakes.
+    3. **Confidence Value:** Because perfect classification is impossible, well-designed AI systems provide not only a response but also a **confidence value** (a probability score) to indicate how certain they are of the classification, similar to how humans sometimes have to guess the intended meaning.
+    
+    This process helps the AI bridge the gap from simple tokens and classifications to deeper understanding and responding to questions.
+    
+    ---
+    
+    ## Language & AI Classification Challenges
+    
+    - **Vague Terms:** Many words have multiple meanings, making it hard for an AI to determine the intended meaning based solely on the word itself.
+    - **Example (Riddle):** In "Why does your nose **run** and your feet **smell**?", the words "run" and "smell" each have two different meanings related to a cold/liquid flow and an odor/sense perception, respectively.
+    - **Examples (Contradictions):** Other examples include **shipping** (by train or boat), **burning down** a building (which burns up), and **filling in** a form (by filling it out).
+    - **Context Dependence:** Classification is harder than mere token identification because the correct meaning often relies heavily on the **context** of the surrounding sentence or conversation.
+    
+    ---
+    
+    ### How AI Systems Tackle Classification
+    
+    - **Association and Frequency:** AI systems learn to classify by **ingesting massive amounts of data**.
+    - **Learning Context:** They identify the **frequency** with which certain words (like places and types of travel) are linked.
+    - **Example:** An AI associates "**shipping** from a **dock**" with **boat travel** and "**shipping** from a **station**" with **rail travel** by observing thousands of instances.
+    - **Imperfect Classification:** Just like humans, an AI's classification is **never 100% perfect**.
+    - **Confidence Values:** Well-designed AI systems acknowledge this limitation by providing a **confidence value** along with their response, indicating their certainty.
