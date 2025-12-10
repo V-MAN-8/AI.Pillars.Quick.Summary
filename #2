@@ -1,0 +1,49 @@
+## **Structured, semi-structured, unstructured data and data learning**
+
+- **Data** is raw information. Data might be facts, statistics, opinions, or any kind of content that is recorded in some format. This could include voices, photos, names, videos, and files
+- **Structured data:** is typically categorized as quantitative **data and is highly organized. Structured data is information that can be organized in rows and columns. Perhaps you've seen structured data in a spreadsheet, like Google Sheets or Microsoft Excel. Examples of structured data includes names, dates, addresses, credit card numbers, stock information.
+- **Unstructured data:** also known as **dark data**, is typically categorized as *qualitative* data. It cannot be processed and analyzed by conventional data tools and methods. Unstructured data lacks any built-in organization, or structure. Examples of unstructured data include images, texts, customer comments, medical records, and even song lyrics.
+- **Semi-structured data** is the “bridge” between structured and unstructured data. It doesn't have a predefined data model. It *combines* features of both structured data and unstructured data. It's more complex than structured data, yet easier to store than unstructured data. Semi-structured data uses **metadata** to identify specific data characteristics and scale data into records and preset fields. Metadata ultimately enables semi-structured data to be better cataloged, searched, and analyzed than unstructured data. An example of semi-structured data is a video on a social media site. The video by itself is unstructured data, but a video typically has text for the internet to easily categorize that information, such as through a hashtag to identify a location.
+
+---
+
+## **So the data is 3 types**
+
+- **Structured data** : row columns , spreadsheet , names , addresses and credit card numbers
+- **unStructured data** : Known as dark data thats cant be processed and analyzed by conventional data tools **Examples** : images , texts , customer comments , medical records .
+- **Semi-Structured data** : its a bridge between structured data and unstructured data and its uses metadata to identify specific data into records **Examples** : video on social media site the video by itself is unstructured data but the video typically has a text for easy categorize the information
+
+---
+
+## **Data learning**
+
+- **Supervised learning**: its providing AI with enough examples to make accurate predictions.
+- **Unsupervised learning:** a person feeds a machine a large amount of information, asks a question, and then the machine is left to figure out how to answer the question by itself.
+- **Reinforcement learning:** is a machine learning model similar to supervised learning, but the algorithm isn’t trained using sample data. This model learns as it goes by using trial and error. A sequence of successful outcomes is reinforced to develop the best recommendation for a given problem. The foundation of reinforcement learning is rewarding the “right” behavior and punishing the “wrong” behavior.
+
+---
+
+## **labeled data**
+
+- is data that is grouped into samples that are tagged with one or more labels.
+- **Example about labeled data:** the information might be drawings and photos of animals, some of which are dogs and are labeled “dog”. The machine will learn by identifying a pattern for “dog”. When the machine sees a new dog photo and is asked, “What is this?”, it will respond, “dog”, with high accuracy. This is known as a **classification problem**.
+
+---
+
+## **Debate steps**
+
+### **1. Learn and understand the topic**
+
+Ingest several billion passages from newspapers, books, and journals. (AI researchers call this collection of learned material a **corpus**.) Then, structure all that content so you can relate concepts to each other and evaluate them, even when they’re stated in different ways.
+
+### **2. Build a position**
+
+Create an opening speech made of short pieces of text pasted together from the corpus. Your speech should detail your position on the debate topic. It can’t be a jumble of phrases. It must present a compelling argument, in logical order, using good grammar.
+
+### **3. Organize your proof**
+
+Learn the deeper meaning of the facts that surround your topic. Decide what evidence is strongest and arrange your proof by themes. Adjust your arrangement each time new evidence arrives. This will help you find updated or completely new information that can score points against your opponent’s position.
+
+### **4. Respond to your opponent**
+
+Listen to your opponent’s arguments and rebuttals, then deliver a convincing rebuttal that refutes your opponent and further proves your case.
