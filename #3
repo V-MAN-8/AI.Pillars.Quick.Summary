@@ -1,0 +1,47 @@
+## **Machine Learning Approach**
+
+- **Trial and Error (Climbing the Tree):** The ML system treats the problem like **climbing a tree**. It tries one route (starting at the trunk) and continues forking in directions (at branches) until it reaches either a **dead end** or the **desired destination**.
+- **Comparison and Optimization:** It repeats this process **over and over** again. It then **compares** the successful routes it found to **identify the shortest** or best one.
+- **Resource Efficiency:** This process, while seemingly repetitive, requires **fewer computational resources** and can be completed **more quickly** than having to pre-program and search through every possible scenario.
+
+---
+
+## Advantages of Machine Learning
+
+- **No Exhaustive Database Needed:** It doesn't need a massive, pre-loaded database of *all* possible routes. It only needs to know the **locations on the map**.
+- **Quick Adaptation to Change:** It can respond to new or changing problems (like traffic jams) quickly. It **doesn't need to store alternative routes** for every scenario; it simply notes where slowdowns are and finds a way around them through **trial and error**.
+- **Speed:** It can work very quickly by performing **millions of tiny calculations** as it tries single turns one at a time.
+- **Prediction:** Machine learning can **predict** outcomes (e.g., "This route is likely to be faster") because it **compares** routes as it builds them.
+- **Learning:** Crucially, it **learns** from its experiences. It can notice a temporary delay (like a detour) and **adjust its recommendations** to help future drivers.
+
+---
+
+## **Machine learning probabilistic calculation**
+
+- **Human Oversight:** The user is responsible for interpreting the probability and making the **deterministic** choice.
+- In a navigation system, the driver decides which route to take, even if the system states it is **"84% confident"** in one option.
+- In a medical scenario, the **doctor** must use their expertise, ethical judgment, and the patient's preferences, alongside the ML system's high-probability recommendation, to decide the **final treatment plan**.
+
+---
+
+## Core Concepts
+
+- **Learning Process:** Machines acquire knowledge and understanding through **experience**, a process called **cognition**, achieving results that resemble human thinking.
+- **Mechanism:** This learning is primarily driven by complex rules known as **algorithms**, which help the systems analyze data.
+- **Current Limitation:** These systems **currently lack** common sense, world knowledge, and a sense of self.
+
+---
+
+## The Human-AI Contrasting Capabilities
+
+- **AI's Role (Probabilistic):** AI systems excel at **pinpointing patterns** and processing enormous amounts of data without bias (provided the data is clean). They give a **confidence value** (e.g., 84% confident) that acts as an **unbiased, data-driven recommendation**.
+- **Human's Role (Deterministic):** Humans excel at applying **common sense**, **compassion**, and making **complex generalizations**. While human judgment can be tainted by bias, it is essential for the final, **deterministic** decision. The human acts as the final check, applying ethical and contextual understanding that AI lacks
+
+| **Human Capabilities** | **AI Capabilities** |
+| --- | --- |
+| **Common Sense** | **Pinpointing Patterns** |
+| **Compassion** | **Processing Vast Amounts of Data** |
+| **Imagining Possibilities** | **Making Unbiased Recommendations** (if trained on unbiased data) |
+| **Complex Generalizations & Abstractions** | **Making Millions of Tiny Calculations Quickly** |
+
+---
