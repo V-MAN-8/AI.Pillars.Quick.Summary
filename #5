@@ -1,0 +1,56 @@
+## **Chatbot Structure and Functionality**
+
+- **Limited Functionality:** Chatbots are typically programmed to answer a **limited set of questions** related to a specific subject or the website's purpose (e.g., asking a shopping bot about refunds).
+- **Inability to Handle Unrelated/Unclear Queries:** When a user asks an unclear or out-of-scope question (e.g., asking a shopping bot for tickets), the chatbot usually replies with a message indicating it did not understand.
+- **Always Available:** Chatbots are accessible **24/7**, offering immediate engagement.
+- **Repetitive Question Handling:** They are highly useful for businesses and institutions as they can efficiently answer **repetitive questions**, saving the cost of human staff.
+- **Interactive Engagement:** Unlike passive advertisements (like TV commercials), chatbots actively **"listen" and respond** to user input.
+- **Small Data:** Chatbots operate on a **much more limited scale** than general AI, dealing with "small data."
+- **Specific Focus:** For example, a movie chain's chatbot only needs data to answer questions about movie titles, locations, and times, while a general AI must process vast, broad social media data. AI researchers characterize this as chatbots **"snacking on small data."**
+
+---
+
+## The Role of Classifiers in a Chatbot's Backend
+
+- **User Variability**: Humans ask the same question in a large variety of ways, which can include:
+- **Synonymous Phrases:** "How do I reset my password" vs. "How come I can't log into my account?!"
+- **Emotional Language:** "I forgot my @#$ password!"
+- **Statements of Error:** "It says my password is wrong."
+- **Misspellings/Slang:** "fergot paswrd"
+
+If a programmer used simple, fixed logic (like `IF question = "X" THEN reply = "Y"`), the chatbot would fail to understand most users.
+
+---
+
+### The Solution: Classifiers
+
+**Classifiers** are algorithms that perform the **"hard work"** in the chatbot's backend by solving this variability problem.
+
+- **Mapping Function:** They **map a large number of different user queries** (the many ways a question can be asked) to a **very small set of predetermined answers**.
+- **Efficiency:** This process allows a single, standardized response (e.g., "Here's how to create a new password") to be triggered by potentially hundreds of different user inputs.
+- **Real-world Scale:** Some retail chatbots use classifiers to handle **hundreds of unique questions** with as few as **five or six possible answers**.
+- **Escalation:** Queries that the classifiers cannot map to a standard answer are then **sent to human customer service representatives**.
+
+---
+
+## **The Three Core Components of a Chatbot Backend**
+
+The text explains that a chatbot's backend breaks down user questions to identify two key elements—**Intents** and **Entities**—which then trigger the appropriate **Dialog**.
+
+       **1. Intent (The Purpose / The Verb)**
+
+- **Definition:** The **intent** is the user's **purpose** or the action they want to perform by contacting the chatbot. It is often compared to a **verb**.
+- **Examples:** Filing a complaint, asking for directions, or trying to **find out when a restaurant is open** ($\text{Intent} = \text{Open}$).
+- **User Variability:** A single intent can be triggered by a wide range of user inputs (e.g., "What are your hours?", "You open now?", "How late are you open?").
+
+**2. Entity (The Noun)**
+- **Definition:** An **entity** is a specific piece of information, or a **noun** (a person, place, or thing), that modifies the intent.
+- **Examples:** In the query, "What are the hours for the **Austin location**?", the **Intent** is *finding hours*, and **Austin** is the **Entity** (the specific location). Other implied entities could be *Schedule* or *Time*.
+- **Requirement:** A chatbot must have a complete list of relevant entities to be truly helpful.
+
+**3. Dialog (The Flowchart / The Response)**
+- **Definition:** The **dialog** is the machine's planned response structure, represented as an **IF/THEN tree structure** or **flowchart**. It dictates how the chatbot replies once the intent and entities have been identified.
+- **Function:** It allows the chatbot, using **Artificial Intelligence (AI)** and **Natural Language Processing (NLP)**, to provide a structured response even if the user's input contains poor grammar or chat expressions.
+- **Structure:** Since a complete flowchart would be too complex, conversation moments are condensed into a **node**.
+- **Node:** Contains the chatbot's statement and an expandable list of possible subsequent user replies.
+- **Process:** The conversation maps a **large number of possible user questions** (based on identified intents) onto a **small number of possible answers** until the conversation concludes. (The text notes that modern virtual assistants benefit from pre-training on vast knowledge bases like Wikipedia.)
